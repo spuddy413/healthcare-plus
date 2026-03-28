@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("/assets/fonts/DMSerifDisplay.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Healthcare teal-blue palette */
+    --background: 0.98 0.004 210;
+    --foreground: 0.18 0.025 240;
+
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.025 240;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.025 240;
+
+    --primary: 0.52 0.18 215;
+    --primary-foreground: 1 0 0;
+
+    --secondary: 0.94 0.028 210;
+    --secondary-foreground: 0.25 0.06 225;
+
+    --muted: 0.94 0.015 210;
+    --muted-foreground: 0.5 0.03 225;
+
+    --accent: 0.62 0.17 185;
+    --accent-foreground: 1 0 0;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 1 0 0;
+
+    --border: 0.9 0.02 215;
+    --input: 0.9 0.02 215;
+    --ring: 0.52 0.18 215;
+
+    --radius: 0.75rem;
+
+    --chart-1: 0.52 0.18 215;
+    --chart-2: 0.62 0.17 185;
+    --chart-3: 0.72 0.14 170;
+    --chart-4: 0.45 0.12 250;
+    --chart-5: 0.58 0.19 200;
+
+    --sidebar: 0.97 0.008 210;
+    --sidebar-foreground: 0.18 0.025 240;
+    --sidebar-primary: 0.52 0.18 215;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.94 0.028 210;
+    --sidebar-accent-foreground: 0.25 0.06 225;
+    --sidebar-border: 0.9 0.02 215;
+    --sidebar-ring: 0.52 0.18 215;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "DM Serif Display", serif;
+  }
+}
