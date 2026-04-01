@@ -79,28 +79,28 @@ const DOCTORS = [
     name: "Dr. Sarah Mitchell",
     specialty: "Primary Care & Internal Medicine",
     experience: 14,
-    img: "/assets/generated/doctor-1.dim_400x400.jpg",
+    img: "/generated/doctor-1.dim_400x400.jpg",
     initials: "SM",
   },
   {
     name: "Dr. James Chen",
     specialty: "Cardiology",
     experience: 18,
-    img: "/assets/generated/doctor-2.dim_400x400.jpg",
+    img: "/generated/doctor-2.dim_400x400.jpg",
     initials: "JC",
   },
   {
     name: "Dr. Amara Osei",
     specialty: "Pediatrics",
     experience: 11,
-    img: "/assets/generated/doctor-3.dim_400x400.jpg",
+    img: "/generated/doctor-3.dim_400x400.jpg",
     initials: "AO",
   },
   {
     name: "Dr. Marcus Rivera",
     specialty: "Orthopedic Surgery",
     experience: 16,
-    img: "/assets/generated/doctor-4.dim_400x400.jpg",
+    img: "/generated/doctor-4.dim_400x400.jpg",
     initials: "MR",
   },
 ];
@@ -323,7 +323,7 @@ export default function App() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('/assets/generated/hero-healthcare.dim_1400x800.jpg')",
+                "url('/generated/hero-healthcare.dim_1400x800.jpg')",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/40 to-transparent" />

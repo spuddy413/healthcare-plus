@@ -1,0 +1,10 @@
+services:
+  - type: static_site
+    name: healthcare-plus
+    rootDir: .
+    buildCommand: pnpm install --frozen-lockfile && pnpm build:frontend
+    publishPath: src/frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
